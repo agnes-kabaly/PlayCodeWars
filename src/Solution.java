@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Solution {
 
@@ -14,7 +13,17 @@ public class Solution {
                 n = n / factor;
             }
         }
-        System.out.println(factorialList);
+        Set<Integer> factorialSet = new LinkedHashSet<>(factorialList);
+        for (int each : factorialSet) {
+            if (Collections.frequency(factorialList, each) > 1) {
+                result += "(" + each + "**" + Collections.frequency(factorialList, each) + ")";
+            } else {
+                result += "(" + each + ")";
+            }
+        }
+        if (n > 1) {
+            result += "(" + n + ")";
+        }
         return result;
     }
 
