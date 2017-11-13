@@ -1,9 +1,20 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Solution {
 
-    // Primes in numbers
     // 5 kyu
-    public static String factors(int n) {
+    // Primes in numbers
+    public String factors(int n) {
+        List<Integer> factorialList = new ArrayList<>();
         String result = "";
+        for (int factor = 2; factor*factor <= n; factor++) {
+            while (n % factor == 0) {
+                factorialList.add(factor);
+                n = n / factor;
+            }
+        }
+        System.out.println(factorialList);
         return result;
     }
 
