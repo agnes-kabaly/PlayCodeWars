@@ -29,6 +29,11 @@ public class Main {
                 {2, 8, 7, 4, 1, 9, 6, 3, 5},
                 {3, 4, 5, 2, 8, 6, 1, 7, 0}
         }));
+
+        Factorial factorialC = new Factorial();
+        System.out.println(factorialC.factorial(25));
+        System.out.println(factorialC.factorial(5));
+
     }
 
 
