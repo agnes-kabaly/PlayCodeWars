@@ -34,6 +34,11 @@ public class Main {
         System.out.println(factorialC.factorial(25));
         System.out.println(factorialC.factorial(5));
 
+        System.out.println(factorialC.zeros(6));
+        System.out.println(factorialC.zeros(12));
+        System.out.println(factorialC.zeros(100));
+        System.out.println(factorialC.zeros(1000));
+
     }
 
 

@@ -15,5 +15,15 @@ public class Factorial {
         return res.toString();
     }
 
+    // 5 kyu
+    // Number of trailing zeros of N!
+    public int zeros(int n) {
+        int counter = 0;
+        for (int i = 5; n / i >= 1; i *= 5) {
+            counter += n / i;
+        }
+        return counter;
+    }
+
 
 }
