@@ -1,10 +1,17 @@
 public class Main {
 
     public static void main(String[] args) {
+        FactDecomp factDecomp = new FactDecomp();
+        System.out.println(factDecomp.decomp(3));
+        System.out.println(factDecomp.decomp(5));
+        System.out.println(factDecomp.decomp(12));
+        System.out.println(factDecomp.decomp(4000));
+
         Solution solution = new Solution();
         System.out.println(solution.factors(7775460));
         System.out.println(solution.factors(86240));
         System.out.println(solution.factors(18195729));
+        System.out.println(solution.factors(120));
 
         Sudoku sudoku = new Sudoku();
         System.out.println(sudoku.check(new int[][]{
@@ -30,14 +37,14 @@ public class Main {
                 {3, 4, 5, 2, 8, 6, 1, 7, 0}
         }));
 
-        Factorial factorialC = new Factorial();
-        System.out.println(factorialC.factorial(25));
-        System.out.println(factorialC.factorial(5));
+        Factorial factorial = new Factorial();
+        System.out.println(factorial.factorial(25));
+        System.out.println(factorial.factorial(5));
 
-        System.out.println(factorialC.zeros(6));
-        System.out.println(factorialC.zeros(12));
-        System.out.println(factorialC.zeros(100));
-        System.out.println(factorialC.zeros(1000));
+        System.out.println(factorial.zeros(6));
+        System.out.println(factorial.zeros(12));
+        System.out.println(factorial.zeros(100));
+        System.out.println(factorial.zeros(1000));
 
     }
 
