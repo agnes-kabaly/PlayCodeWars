@@ -16,13 +16,7 @@ public class KataCoin {
             finalResult.add(combo + "H");
             finalResult.add(combo + "T");
         }
-
         String[] result = finalResult.toArray(new String[finalResult.size()]);
-
-        /*for (int i = 0; i < result.length; i++) {
-            System.out.println(result[i]);
-        }*/
-
         return result;
     }
 
